@@ -5,7 +5,7 @@ const useToken=user=>{
  const email=user?.user?.email;
  const currentuser={email:email};
  if(email){
-    fetch(`https://doctors-portal-server-module-72.vercel.app/user/${email}`,{
+    fetch(`http://localhost:5000/user/${email}`,{
         method:'PUT',
         headers:{
             'content-type':'application/json'

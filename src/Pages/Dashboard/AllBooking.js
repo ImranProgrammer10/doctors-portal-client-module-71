@@ -11,7 +11,7 @@ const AllBooking = () => {
  
 
     useEffect(() => {
-        fetch('http://localhost:5000/booking/admin')
+        fetch('https://doctors-portal-server-module-72.vercel.app/booking/admin')
             .then(res => res.json()).then(data => setAppointments(data));
     }, [])
 

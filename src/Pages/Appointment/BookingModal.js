@@ -22,7 +22,7 @@ const booking={
   phone:event.target.phone.value
 }
 
-fetch('http://localhost:5000/booking',{
+fetch('https://doctors-portal-server-module-72.vercel.app/booking',{
   method:'POST',
   headers:{
     'content-type':'application/json'

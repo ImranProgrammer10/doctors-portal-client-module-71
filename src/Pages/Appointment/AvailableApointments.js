@@ -12,7 +12,7 @@ const AvailableApointments = ({date}) => {
     const [treatment, setTreatment] = useState(null);
 
     const formattedDate = format(date, 'PP');
-    const { data: services, isLoading, refetch } = useQuery(['available', formattedDate], () => fetch(`http://localhost:5000/available?date=${formattedDate}`)
+    const { data: services, isLoading, refetch } = useQuery(['available', formattedDate], () => fetch(` https://doctors-potal-server-module-72.vercel.app/available?date=${formattedDate}`)
         .then(res => res.json()))
 
     if(isLoading){

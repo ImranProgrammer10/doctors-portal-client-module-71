@@ -5,7 +5,7 @@ const [adminLoading,setAdminLoading]=useState(true);
     useEffect(()=>{
         const email=user?.email;
         if(email){
-            fetch(`https://doctors-portal-70652.web.app/admin/${email}`,{
+            fetch(`http://localhost:5000/admin/${email}`,{
                 method:'GET',
                 headers:{
                     'content-type':'application/json',

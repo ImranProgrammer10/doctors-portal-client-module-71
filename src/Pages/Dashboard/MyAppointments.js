@@ -13,7 +13,7 @@ const MyAppointments = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(` https://doctors-potal-server-module-72.vercel.app/booking?patient=${user.email}`, {
+            fetch(` https://doctors-potal-server-module-72-production.up.railway.app/booking?patient=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`

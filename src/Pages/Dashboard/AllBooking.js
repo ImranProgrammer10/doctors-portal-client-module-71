@@ -11,7 +11,7 @@ const AllBooking = () => {
  
 
     useEffect(() => {
-        fetch(' https://doctors-potal-server-module-72.vercel.app/booking/admin')
+        fetch(' https://doctors-potal-server-module-72-production.up.railway.app/booking/admin')
             .then(res => res.json()).then(data => setAppointments(data));
     }, [])
 

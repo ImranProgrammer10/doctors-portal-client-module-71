@@ -10,7 +10,7 @@ import Loading from '../../Shared/Loading';
 const ManageDoctors = () => {
     const [deletingDoctor, setDeletingDoctor] = useState(null);
 
-    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch(' https://doctors-potal-server-module-72.vercel.app/doctor', {
+    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch(' https://doctors-potal-server-module-72-production.up.railway.app/doctor', {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }

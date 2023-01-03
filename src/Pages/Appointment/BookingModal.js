@@ -22,7 +22,7 @@ const booking={
   phone:event.target.phone.value
 }
 
-fetch(' https://doctors-potal-server-module-72.vercel.app/booking',{
+fetch(' https://doctors-potal-server-module-72-production.up.railway.app/booking',{
   method:'POST',
   headers:{
     'content-type':'application/json'
